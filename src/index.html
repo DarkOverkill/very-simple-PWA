@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple BTC course PWA</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+  </head>
+  <body>
+    <div class="vertical-container">
+      <h1>BTC to USD:</h1>
+      <div id="btcValue">No data</div>
+      <div class='updateTime-warrper'>Last update:
+        <div id='updateTime'>
+          no data
+        </div>
+      </div>
+      <button id='updateBtn' type="button" class="btn btn-success" onclick="update()">update</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyANLx_c-Ki8KqLOuqHZ_oxJYOHErg3UPh0",
+      authDomain: "simplebtccoursepwa.firebaseapp.com",
+      databaseURL: "https://simplebtccoursepwa.firebaseio.com",
+      projectId: "simplebtccoursepwa",
+      storageBucket: "simplebtccoursepwa.appspot.com",
+      messagingSenderId: "282848055080"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
+    <script src="click.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+  background-color: #ddd !important;
+  color: black;
+}
+.vertical-container {
+  height: 300px;
+  display: -webkit-flex;
+  display:         flex;
+  flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+h1 {
+  margin: 0;
+  opacity: 0.85;
+  font-size: 275%;
+}
+.updateTime-warrper {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+#btcValue {
+  color: green;
+  opacity: 0.6;
+  font-size: 34px;
+}
+#updateTime {
+  margin-left: 10px;
+}
+updateBtn# {
+  user-select: none;
+}

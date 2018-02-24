@@ -1,0 +1,32 @@
+{
+  "name": "Simple BTC course PWA",
+  "short_name": "BTC",
+  "icons": [{
+    "src": "icons/Bitcoin-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "icons/Bitcoin-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "icons/Bitcoin-icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "icons/Bitcoin-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Bitcoin-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "gcm_sender_id": "103953800507",
+  "display": "standalone",
+  "background_color": "#ddd",
+  "theme_color": "#ddd"
+}
